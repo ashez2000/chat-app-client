@@ -1,7 +1,10 @@
+import { Routes, Route } from 'react-router-dom';
+import Auth from './pages/Auth';
+
 export default function App() {
   return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Auth />} />
+    </Routes>
   );
 }
